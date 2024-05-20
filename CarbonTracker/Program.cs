@@ -1,16 +1,16 @@
-﻿using CarbonTracker.Data;
+﻿using System;
+using CarbonTracker.Data;
 using Microsoft.Extensions.Configuration;
 
-namespace CarbonTracker
+namespace StudentDataBase
 {
     internal class Program
     {
         static void Main()
         {
+            const string ConnectionString = "Server=localhost;Database=StudentDatabase;User ID=root;Password=yourpassword;";
 
-            const string ConnectionString = @"Data Source=C:\Natalie\GitRepo\C#\CarbonTracker\CarbonTracker.Data\Carbon.db;Mode=ReadWrite";
-
-			Console.WriteLine(ConnectionString);            
+            Console.WriteLine(ConnectionString);
             CarbonTrackerDb db = new(ConnectionString);
 
             var names = db.GetUserNames();

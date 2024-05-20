@@ -12,12 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="CarbonTrackerDB.cs">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="Carbon.db">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
